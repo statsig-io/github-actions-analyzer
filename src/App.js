@@ -102,10 +102,13 @@ function App() {
           </label> : <div>{file.name}<br /></div>}
           
           {file == null ? null : <Button onClick={handleSubmit} disabled={file === null}>Analyze</Button>}
+          <div style={{marginBottom: "12px"}}>
+            <a class="headerLink" href="https://docs.github.com/en/billing/managing-billing-for-github-actions/viewing-your-github-actions-usage" target="_blank" rel="noreferrer">Where can I get a Github Actions Usage csv?</a>
+          </div>
           <div className="footnote">
-              The contents of your file will only be used to render tables and charts in your browser.
-              It will not be uploaded to any server.
-              Feel free to verify for yourself in the github repository for this site!
+            The contents of your file will only be used to render tables and charts in your browser.
+            It will not be uploaded to any server.
+            Feel free to verify for yourself in the <a class="headerLink" href="https://github.com/statsig-io/github-actions-analyzer/" target="_blank" rel="noreferrer">github repository for this site</a>!
           </div>
         </div>
       </Header>
